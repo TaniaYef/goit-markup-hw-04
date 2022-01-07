@@ -52,21 +52,15 @@ ul {
   display: flex;
   align-items: center;
 }
-/* margin-left: auto; */
-/* .container-nav {
-  display: flex;
-} */
-/* .contacts-item {
-  display: flex;
-} */
+
 .registration {
   display: flex;
-  margin: 0 auto;
+  margin-left: auto;
   align-items: center;
 }
 
 .icon-mt {
-  margin-top: 34px;
+  margin-top: 32px;
   margin-right: 10px;
   fill: var(--content-text-color);
 }
@@ -139,10 +133,6 @@ ul {
 .auth-nav .mail-tel:focus .icon-mt {
   fill: var(--accent-text-color);
 }
-/* .mail-tel .icon-mt:hover,
-.mail-tel .icon-mt:focus {
-  fill: #2196f3;
-} */
 
 .section {
   padding-top: 94px;
