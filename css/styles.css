@@ -1,6 +1,7 @@
 :root {
   --content-text-color: #757575;
   --title-text-color: #212121;
+  --accent-text-color: #2196f3;
 }
 
 body {
@@ -29,6 +30,7 @@ ul {
 }
 .site-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav .link {
   display: block;
@@ -48,16 +50,39 @@ ul {
 }
 .auth-nav {
   display: flex;
-  margin-left: auto;
+  align-items: center;
 }
-.auth-nav .mail-tel {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+/* margin-left: auto; */
+/* .container-nav {
+  display: flex;
+} */
+/* .contacts-item {
+  display: flex;
+} */
+.registration {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.icon-mt {
+  margin-top: 34px;
+  margin-right: 10px;
+  fill: var(--content-text-color);
+}
+
+.item > .icon {
+  padding: 0;
+  margin-top: 34px;
+  margin-bottom: 0;
 }
 .auth-nav > .item + .item {
   margin-left: 50px;
 }
+.auth-nav > .mail-tel {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -103,11 +128,22 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   color: var(--content-text-color);
+  display: flex;
+  align-items: center;
 }
-.mail-tel:hover,
-.mail-tel:focus {
-  color: #2196f3;
+.auth-nav .mail-tel:hover,
+.auth-nav .mail-tel:focus {
+  color: var(--accent-text-color);
 }
+.auth-nav .mail-tel:hover .icon-mt,
+.auth-nav .mail-tel:focus .icon-mt {
+  fill: var(--accent-text-color);
+}
+/* .mail-tel .icon-mt:hover,
+.mail-tel .icon-mt:focus {
+  fill: #2196f3;
+} */
+
 .section {
   padding-top: 94px;
 }
@@ -132,8 +168,9 @@ ul {
   color: #ffffff;
 }
 .button {
-  margin-top: 30px;
   display: flex;
+  justify-content: center;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   border: 0;
@@ -158,7 +195,7 @@ ul {
 /* Benefits */
 
 .benefits {
-  visibility: hidden;
+  display: none;
 }
 
 .icon {
@@ -221,7 +258,7 @@ ul {
 
 .container-command > .item {
   background-color: #ffffff;
-  height: 428px;
+  /* height: 428px; */
   width: 270px;
 }
 .container-command {
@@ -283,8 +320,8 @@ ul {
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
-  padding-bottom: 20px;
-  height: 252px;
+  padding-bottom: 60px;
+  /* height: 252px; */
 }
 .logo-b-footer {
   font-family: "Raleway", sans-serif;
@@ -424,7 +461,7 @@ ul {
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: 370px;
-  height: 404px;
+  /* height: 404px; */
 }
 .main-portfolio > .item:nth-child(3n) {
   margin-right: 0;
